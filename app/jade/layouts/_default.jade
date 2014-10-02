@@ -6,14 +6,26 @@ html(lang="en")
     meta(content='', name='description')
     meta(content='', name='author')
     meta(content='3 days', name='revisit-after')
+    meta(content='width=device-width, initial-scale=1' name='viewport')
 
     // build:css /styles/main.css
     link(href='/bower_components/bootstrap/dist/css/bootstrap.css', rel='stylesheet')    
     link(href='/styles/main.css', rel='stylesheet')
-    
     // endbuild
 
   body(class=page)
+    nav.navbar.navbar-default(role='navigation')
+        .container-fluid
+            .collapse.navbar-collapse
+                ul.nav.navbar-nav
+                    li.dropdown
+                        a(href="#", data-toggle='dropdown').dropdown-toggle Products and Services
+                            span.caret
+                        ul.dropdown-menu(role='menu')            
+                            li  
+                                a(href='#') Products and Services
+                            
+     
     header
       h1 Ahoi, jade-practice!
 
