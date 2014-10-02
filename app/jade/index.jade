@@ -1,0 +1,82 @@
+extends /layouts/_default
+
+style.
+  .patrick {
+    color: blue;
+    font-size: 100px;
+  }
+
+block content
+  section
+    p this is powered by the jade template engine and served via node.js
+    p until now this is what you got. Only jQuery is included via bower. No other fancy js and css frameworks.
+    p but you can add them very easily. Just update your bower file and run <code>bower install</code>
+    p cats <h1>M</h1>
+    p dogs 
+      strong doooogs 
+      | fasdfadf
+      br
+      | asdfads 
+  section
+    p All jade files are supposed to be located under app/jade/. All .jade files with an _underscore are treated as partials and not rendered directly. Everything else is a jade file that is supposed to be a page.
+    p And this is how i thought about the directory structure of the jade directory
+
+    span.patrick asdjf 
+    span fasdf
+
+    div asdjf
+    div adfas
+
+    h1 THis is a heading
+
+    h1.
+      ßasdfadsf
+      fasdf
+      | sadfadsf
+      | fadsfasdf
+
+
+    button.btn.btn-primary Heee
+
+    pre.
+      jade
+      |-- index.jade
+      |-- layouts
+      |   |-- _default.jade
+      |-- page1
+      |  |-- index.jade
+      |       |-- partials
+      |           |-- _partial.jade
+      + - page2
+         |-- index.jade
+              |-- partials
+                  |-- _partial.jade
+
+//- Homepage:
+//- 1.  Logo
+//- 2.  Product/Services
+  //- a.  Product/Service 
+    //- i.  description
+    //- ii. Value Proposition
+  //- b.  Fees/Rates
+//- 3.  Terms and Policies
+  //- a.  Requirements for application
+  //- b.  Terms , conditions, policies
+  //- c.  Penalties
+//- 4.  Business Partners
+  //- a.  Solution
+  //- b.  
+//- 5.  Customers
+  //- a.  Sign up/Log in
+    //- i.  Apply for new loan
+    //- ii. Loan balance
+//- 6.  FAQs
+//- 7.  About Us
+  //- a.  Company description
+  //- b.  Contact details
+    //- i.  Email
+    //- ii. Phone
+  //- c.  Show compliance with legal requirements (if any)
+    //- i.  Truth in lending act (RA 3765)
+    //- ii. Lending company regulation act (RA 9474)
+  //- d.  Suggestion/comment box
