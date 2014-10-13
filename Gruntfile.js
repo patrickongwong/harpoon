@@ -42,6 +42,10 @@ module.exports = function(grunt) {
       jade: {
         files: '<%= folders.app %>/jade/**/*.jade',
         tasks: ['jade']
+      },
+      coffee: {
+        files: ['<%= folders.app %>/scripts/{,*/}*.coffee'],
+        tasks: ['coffee']
       }
     },
     connect: {
@@ -115,6 +119,29 @@ module.exports = function(grunt) {
         options: {
           debugInfo: true
         }
+      }
+    },
+    coffee: {
+      options: {
+        sourceMap: true,
+        sourceRoot: ''
+      },
+      dist: {
+        files: [
+          {
+            src: ['<%= folders.app %>/scripts/{,*/}*.coffee'],
+            dest: '<%= folders.tmp %>/scripts/all.js',
+          }
+        ]
+      },
+      test: {
+        files: [{
+          expand: true,
+          cwd: 'test/spec',
+          src: '{,*/}*.coffee',
+          dest: '.tmp/spec',
+          ext: '.js'
+        }]
       }
     },
     autoprefixer: {
@@ -314,6 +341,7 @@ module.exports = function(grunt) {
     grunt.task.run([
       'clean:server',
       'jade',
+      'coffee',
       'concurrent:server',
       'autoprefixer',
       'connect:server',
@@ -331,6 +359,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'jade',
+    'coffee',
     'copy:js',
     'copy:css',
     'useminPrepare',
