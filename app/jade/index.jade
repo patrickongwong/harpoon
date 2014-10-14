@@ -9,9 +9,13 @@ style.
 block content
   section.welcome-text
     .container.text-center
-      h1 Clock in and out everyday with a smile. 
-      h3 Facial recognition ensures the right person is there at the right time.
-      h3 Track time, attendance, scheduling and analytics in your business with one simple system.
+      .row
+        .col-sm-4
+          img(src='/assets/Harpoon Logo.jpg')
+        .col-md-8
+          h1 Clock in and out everyday with a smile. 
+          h3 Facial recognition ensures the right person is there at the right time.
+          h3 Track time, attendance, scheduling and analytics in your business with one simple system.
   section.get-started
     .container
       .row
@@ -21,8 +25,85 @@ block content
               input.form-control.input-lg(type='text', placeholder='Name')
             .form-group
               input.form-control.input-lg(type='email', placeholder='Email')
-            button.btn-block.btn-success(type='submit') Get Started!
-            
+            button.btn.btn-block.btn-success(type='submit') Get Started!
+  section.details
+    .container
+      .row
+        .col-sm-3.text-center
+          i.fa.fa-camera-retro.details-icon
+          h3 Clock in with a picture and facial recognition
+          // Indent a if you want it inside p, otherwise follow others
+          p Uses today's technology to ensure the right person is clocking in at the right time. 
+            a.details-link Learn More &gt;
+        .col-sm-3.text-center
+          i.fa.fa-clock-o.details-icon
+          h3 Clock in with a picture and facial recognition
+          p Uses today's technology to ensure the right person is clocking in at the right time.
+          a.details-link Learn More &gt;
+        .col-sm-3.text-center
+          i.fa.fa-map-marker.details-icon
+          h3 Clock in with a picture and facial recognition
+          p Uses today's technology to ensure the right person is clocking in at the right time.
+          a.details-link Learn More &gt;
+        .col-sm-3.text-center
+          i.fa.fa-users.details-icon
+          h3 Clock in with a picture and facial recognition
+          p Uses today's technology to ensure the right person is clocking in at the right time.
+          a.details-link Learn More &gt;
+  section.links-container
+    .container
+      .row
+        .col-sm-3
+          h4.links-container-header Support
+          ul.fa-ul
+            li.links-container-list-item
+              i.fa.fa-li.fa-search
+              a(href='#') Knowledge base
+            li.links-container-list-item
+              i.fa.fa-li.fa-question-circle
+              a(href='#') FAQ's
+            li.links-container-list-item
+              i.fa.fa-li.fa-play-circle
+              a(href='#') Video Library
+            li.links-container-list-item
+              i.fa.fa-li.fa-comments-o
+              a(href='#') Contact us
+        .col-sm-3
+          h4.links-container-header About us
+          ul.fa-ul
+            li.links-container-list-item
+              i.fa.fa-li.fa-plus-circle
+              a(href='#') Integration
+            li.links-container-list-item
+              i.fa.fa-li.fa-lightbulb-o
+              a(href='#') Advisers
+            li.links-container-list-item
+              i.fa.fa-li.fa-newspaper-o
+              a(href='#') Press
+            li.links-container-list-item
+              i.fa.fa-li.fa-paperclip
+              a(href='#') Press Kit
+        .col-sm-3
+          h4.links-container-header Follow
+          ul.fa-ul
+            li.links-container-list-item
+              i.fa.fa-li.fa-eye
+              a(href='#') Blog
+            li.links-container-list-item
+              i.fa.fa-li.fa-facebook-square
+              a(href='#') Facebook
+            li.links-container-list-item
+              i.fa.fa-li.fa-twitter-square
+              a(href='#') Twitter
+            li.links-container-list-item
+              i.fa.fa-li.fa-linkedin-square
+              a(href='#') LinkedIn
+            li.links-container-list-item
+              i.fa.fa-li.fa-youtube-square
+              a(href='#') Youtube
+        .col-sm-3
+          button.btn.btn-block.btn-primary.links-container-get-started(type='button') Get Started
+              
 //block content
   
   

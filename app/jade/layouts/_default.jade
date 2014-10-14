@@ -1,5 +1,5 @@
 doctype html
-html(lang="en", ng-app='Harpoon')
+html(lang="en")
   head
     title jade-practice
     meta(charset='UTF-8')
@@ -9,13 +9,18 @@ html(lang="en", ng-app='Harpoon')
     meta(content='width=device-width, initial-scale=1' name='viewport')
 
     // build:css /styles/main.css
-    link(href='/bower_components/bootstrap/dist/css/bootstrap.css', rel='stylesheet')    
+    link(href='/bower_components/bootstrap/dist/css/bootstrap.css', rel='stylesheet')   
+    link(href='/bower_components/font-awesome/css/font-awesome.min.css', rel='stylesheet') 
     link(href='/styles/main.css', rel='stylesheet')
     // endbuild
 
   body(class=page)
-    nav.navbar.navbar-default(role='navigation')
-        .container-fluid
+    nav.navbar.navbar-default.harpoon-navbar(role='navigation')
+        .container
+            .navbar-header
+                button(type="button" class="navbar-toggle collapsed" data-toggle="collapse", data-target="#bs-example-navbar-collapse-1")
+                    span.icon-bar
+                a.navbar-brand.harpoon-brand(href='/')
             .collapse.navbar-collapse
                 ul.nav.navbar-nav
                     li.dropdown
@@ -23,19 +28,19 @@ html(lang="en", ng-app='Harpoon')
                             span.caret
                         ul.dropdown-menu(role='menu')            
                             li  
-                                a(href='') Products and Services
+                                a(href='#') Products and Services
                             
      
-    
-    div(ng-view)
+    block content
+
     // Footer
     footer
 
     // build:js /scripts/all.js
     
     script(src='/bower_components/jquery/dist/jquery.js')
-    script(src='/bower_components/angular/angular.min.js')
     script(src='/bower_components/bootstrap/dist/js/bootstrap.js')   
+    script(src='/bower_components/angular/angular.js')
     //script(src='/scripts/main.js')
     script(src='/scripts/all.js')
     // endbuild
