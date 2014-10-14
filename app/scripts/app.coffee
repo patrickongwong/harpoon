@@ -8,9 +8,8 @@ module.config [
  '$locationProvider', '$routeProvider',
  ($locationProvider,   $routeProvider) ->
   
-  $routeProvider.when '/payroll',
-    templateUrl: '/'
-    controller: 'PayrollCtrl'
+  $routeProvider.when '/',
+    templateUrl: '/jade/index.html'
     
 ] 
 
