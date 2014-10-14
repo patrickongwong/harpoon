@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="en", ng-app='Harpoon')
   head
     title jade-practice
     meta(charset='UTF-8')
@@ -23,18 +23,19 @@ html(lang="en")
                             span.caret
                         ul.dropdown-menu(role='menu')            
                             li  
-                                a(href='#') Products and Services
+                                a(href='') Products and Services
                             
      
-    block content
-
+    
+    div(ng-view)
     // Footer
     footer
 
     // build:js /scripts/all.js
     
     script(src='/bower_components/jquery/dist/jquery.js')
+    script(src='/bower_components/angular/angular.min.js')
     script(src='/bower_components/bootstrap/dist/js/bootstrap.js')   
-    script(src='/scripts/main.js')
+    //script(src='/scripts/main.js')
     script(src='/scripts/all.js')
     // endbuild
