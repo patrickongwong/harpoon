@@ -1,0 +1,215 @@
+style.
+  .patrick {
+    color: blue;
+    font-size: 100px;
+  }
+
+block content
+  section.welcome-text
+    .container.text-center
+      .row
+        .col-sm-4
+          img(src='/assets/Harpoon Logo.jpg').img-responsive
+        .col-sm-8
+          h1 Clock in and out everyday with a smile. 
+          h3 Facial recognition ensures the right person is there at the right time.
+          h3 Track time, attendance, scheduling and analytics in your business with one simple system.
+  section.get-started
+    .container
+      .row
+        .col-sm-4.col-sm-offset-8
+          form
+            .form-group
+              input.form-control.input-lg(type='text', placeholder='Name')
+            .form-group
+              input.form-control.input-lg(type='email', placeholder='Email')
+            button.btn.btn-block.btn-success(type='submit') Get Started!
+  section.details
+    .container
+      .row
+        .col-sm-3.text-center
+          i.fa.fa-camera-retro.details-icon
+          h3 Clock in with a picture and facial recognition
+          // Indent a if you want it inside p, otherwise follow others
+          p Uses today's technology to ensure the right person is clocking in at the right time. 
+            a.details-link Learn More &gt;
+        .col-sm-3.text-center
+          i.fa.fa-clock-o.details-icon
+          h3 Clock in with a picture and facial recognition
+          p Uses today's technology to ensure the right person is clocking in at the right time.
+          a.details-link Learn More &gt;
+        .col-sm-3.text-center
+          i.fa.fa-map-marker.details-icon
+          h3 Clock in with a picture and facial recognition
+          p Uses today's technology to ensure the right person is clocking in at the right time.
+          a.details-link Learn More &gt;
+        .col-sm-3.text-center
+          i.fa.fa-users.details-icon
+          h3 Clock in with a picture and facial recognition
+          p Uses today's technology to ensure the right person is clocking in at the right time.
+          a.details-link Learn More &gt;
+  section.building-bg
+    .container.text-center
+      h1 Try Harpoon now!
+  section.links-container
+    .container
+      .row
+        .col-sm-3
+          h4.links-container-header Support
+          ul.fa-ul
+            li.links-container-list-item
+              i.fa.fa-li.fa-search
+              a(href='#') Knowledge base
+            li.links-container-list-item
+              i.fa.fa-li.fa-question-circle
+              a(href='#') FAQ's
+            li.links-container-list-item
+              i.fa.fa-li.fa-play-circle
+              a(href='#') Video Library
+            li.links-container-list-item
+              i.fa.fa-li.fa-comments-o
+              a(href='#') Contact us
+        .col-sm-3
+          h4.links-container-header About us
+          ul.fa-ul
+            li.links-container-list-item
+              i.fa.fa-li.fa-plus-circle
+              a(href='#') Integration
+            li.links-container-list-item
+              i.fa.fa-li.fa-lightbulb-o
+              a(href='#') Advisers
+            li.links-container-list-item
+              i.fa.fa-li.fa-newspaper-o
+              a(href='#') Press
+            li.links-container-list-item
+              i.fa.fa-li.fa-paperclip
+              a(href='#') Press Kit
+        .col-sm-3
+          h4.links-container-header Follow
+          ul.fa-ul
+            li.links-container-list-item
+              i.fa.fa-li.fa-eye
+              a(href='#') Blog
+            li.links-container-list-item
+              i.fa.fa-li.fa-facebook-square
+              a(href='#') Facebook
+            li.links-container-list-item
+              i.fa.fa-li.fa-twitter-square
+              a(href='#') Twitter
+            li.links-container-list-item
+              i.fa.fa-li.fa-linkedin-square
+              a(href='#') LinkedIn
+            li.links-container-list-item
+              i.fa.fa-li.fa-youtube-square
+              a(href='#') Youtube
+        .col-sm-3
+          button.btn.btn-block.btn-primary.links-container-get-started(type='button') Get Started
+              
+//block content
+  
+
+
+  div.container-fluid 
+    //-always 100% of your screen
+    p asdfadfasdfadfasdfadf
+    .row
+      .col-md-1.col-md-push-1 asdfasd
+      .col-md-1.col-md-pull-1 .col-md-1
+      .col-md-1 .col-md-1
+      .col-md-1 .col-md-1
+      .col-md-1 .col-md-1
+      .col-md-1 .col-md-1
+      .col-md-1 .col-md-1
+      .col-md-1 .col-md-1
+    .row
+      .col-md-8 Hello
+      .col-md-4
+  .container
+    .row
+      .col-md-1 .col-md-1
+      .col-md-1 .col-md-1
+      .col-md-1 .col-md-1
+      .col-md-1 .col-md-1
+      .col-md-1 .col-md-1
+      .col-md-1 .col-md-1
+      .col-md-1 .col-md-1
+      .col-md-1 .col-md-1
+    .row
+      .col-md-8 Hello
+      .col-md-4
+    //-Alternate way for div only
+    //- Gets clipped when resized
+  section
+    p this is powered by the jade template engine and served via node.js
+    p until now this is what you got. Only jQuery is included via bower. No other fancy js and css frameworks.
+    p but you can add them very easily. Just update your bower file and run <code>bower install</code>
+    p cats <h1>M</h1>
+    p dogs 
+      strong doooogs 
+      | fasdfadf
+      br
+      | asdfads 
+  section
+    p All jade files are supposed to be located under app/jade/. All .jade files with an _underscore are treated as partials and not rendered directly. Everything else is a jade file that is supposed to be a page.
+    p And this is how i thought about the directory structure of the jade directory
+
+    span.patrick asdjf 
+    span fasdf
+
+    div asdjf
+    div adfas
+
+    h1 THis is a heading
+
+    h1.
+      ßasdfadsf
+      fasdf
+      | sadfadsf
+      | fadsfasdf
+
+
+    button.btn.btn-primary Heee
+    button.btn.btn-primary Heee
+
+    pre.
+      jade
+      |-- index.jade
+      |-- layouts
+      |   |-- _default.jade
+      |-- page1
+      |  |-- index.jade
+      |       |-- partials
+      |           |-- _partial.jade
+      + - page2
+         |-- index.jade
+              |-- partials
+                  |-- _partial.jade
+
+//- Homepage:
+//- 1.  Logo
+//- 2.  Product/Services
+  //- a.  Product/Service 
+    //- i.  description
+    //- ii. Value Proposition
+  //- b.  Fees/Rates
+//- 3.  Terms and Policies
+  //- a.  Requirements for application
+  //- b.  Terms , conditions, policies
+  //- c.  Penalties
+//- 4.  Business Partners
+  //- a.  Solution
+  //- b.  
+//- 5.  Customers
+  //- a.  Sign up/Log in
+    //- i.  Apply for new loan
+    //- ii. Loan balance
+//- 6.  FAQs
+//- 7.  About Us
+  //- a.  Company description
+  //- b.  Contact details
+    //- i.  Email
+    //- ii. Phone
+  //- c.  Show compliance with legal requirements (if any)
+    //- i.  Truth in lending act (RA 3765)
+    //- ii. Lending company regulation act (RA 9474)
+  //- d.  Suggestion/comment box
