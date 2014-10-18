@@ -1,4 +1,6 @@
-module = angular.module 'Harpoon', []
+module = angular.module 'Harpoon', [
+  'ngRoute'
+]
 
 module.controller 'PayrollCtrl', ['$scope', ($scope) -> 
   console.log 'controller ready'
@@ -9,7 +11,10 @@ module.config [
  ($locationProvider,   $routeProvider) ->
   
   $routeProvider.when '/',
-    templateUrl: '/jade/index.html'
+    templateUrl: '/home.html'
+  
+  $routeProvider.when '/signup',
+    templateUrl: '/signup.html'
     
 ] 
 
