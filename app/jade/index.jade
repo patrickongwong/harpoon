@@ -16,7 +16,7 @@ html(lang="en", ng-app='Harpoon')
     // endbuild
 
   body(class=page)
-    nav.navbar.navbar-default.harpoon-navbar(role='navigation')
+    nav.navbar.navbar-default.harpoon-navbar.navbar-fixed-top(role='navigation')
         .container
             .navbar-header
                 button(type="button" class="navbar-toggle collapsed" data-toggle="collapse", data-target="#bs-example-navbar-collapse-1")
@@ -24,11 +24,18 @@ html(lang="en", ng-app='Harpoon')
                 a.navbar-brand.harpoon-brand(href='/')
             .collapse.navbar-collapse
                 ul.nav.navbar-nav
-                    li
-                      a(href='/#/signup') Sign up!
                     li.dropdown
-                        a(href="#", data-toggle='dropdown').dropdown-toggle Products and Services
-                            span.caret
+                        a(href="#", data-toggle='dropdown').dropdown-toggle PRODUCT
+                        ul.dropdown-menu(role='menu')            
+                            li  
+                                a(href='#') Products and Services
+                    li.dropdown
+                        a(href="#", data-toggle='dropdown').dropdown-toggle HOW IT WORKS
+                        ul.dropdown-menu(role='menu')            
+                            li  
+                                a(href='#') Products and Services
+                    li.dropdown
+                        a(href="#", data-toggle='dropdown').dropdown-toggle PRICING
                         ul.dropdown-menu(role='menu')            
                             li  
                                 a(href='#') Products and Services
