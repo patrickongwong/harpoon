@@ -7,25 +7,34 @@ style.
   }
 
 block content
-  section.welcome-text
-    .container.text-center
+  section.markdickson-bg
+    .container
       .row
-        .col-sm-4
-          img(src='/assets/Harpoon Logo.jpg').img-responsive
-        .col-sm-8
-          h1 Clock in and out everyday with a smile. 
-          h3 Facial recognition ensures the right person is there at the right time.
-          h3 Track time, attendance, scheduling and analytics in your business with one simple system.
+        .col-sm-6.text-muted
+          img(src='/assets/Harpoon Logo Big.png').img-responsive
+          h1(style="padding-left: 35px") "Your satisfaction is our satisfaction."
+
   section.get-started
     .container
       .row
-        .col-sm-4.col-sm-offset-8
+        .col-sm-4
+          h1(style="color: #fff") "I can't thank you guys enough for saving my financial life."
+          h3(style="color: #fff") -Anonymous
+
+        .col-sm-4
+          h1(style="color: #fff").text-center  Sign in now!
           form
             .form-group
-              input.form-control.input-lg(type='text', placeholder='Name')
+              input.form-control.input-lg(type='text', placeholder='Username')
             .form-group
-              input.form-control.input-lg(type='email', placeholder='Email')
-            button.btn.btn-block.btn-success(type='submit') Get Started!
+              input.form-control.input-lg(type='password', placeholder='Password')
+            .form-group
+              button.btn.btn-block.btn-success(type='submit') Log-in
+              button.btn.btn-block.btn-success(type='submit') Sign-up!
+        .col-sm-4
+          h1(style="color: #fff; padding-left: 90px") "An extraordinary work of finance that will surely transcend generations."
+          h3(style="color: #fff; padding-left: 90px") -Patrick Wong
+
   section.details
     .container
       .row
@@ -50,9 +59,7 @@ block content
           h3 Clock in with a picture and facial recognition
           p Uses today's technology to ensure the right person is clocking in at the right time.
           a.details-link Learn More &gt;
-  section.building-bg
-    .container.text-center
-      h1 Try Harpoon now!
+  
   section.links-container
     .container
       .row
@@ -105,7 +112,7 @@ block content
               i.fa.fa-li.fa-youtube-square
               a(href='#') Youtube
         .col-sm-3
-          button.btn.btn-block.btn-primary.links-container-get-started(type='button') Get Started
+          button.btn.btn-block.links-container-get-started(type='button') Get Started
               
 //block content
   
